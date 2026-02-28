@@ -1,0 +1,46 @@
+{
+  "name": "agentlink-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for Korean public and financial data — AI agents' gateway to Korea (한국 공공·재무 데이터 MCP 서버)",
+  "license": "Apache-2.0",
+  "author": "AgentLink Korea",
+  "type": "module",
+  "bin": {
+    "agentlink-mcp-server": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "korea",
+    "public-data",
+    "tax",
+    "hometax",
+    "ai-agent",
+    "agentlink",
+    "b2a"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iwbasm92-ai/agentlink-mcp-server"
+  }
+}
